@@ -1,10 +1,14 @@
-# git-protokoli-seminar
+# Git - Podržani protokoli i priprema servera
+
 Sveučilište u Rijeci - Tehnički fakultet
+
 Preddiplomski studij računarstva, prva godina
 
-Repozitorij za seminar o podržanim protokolima na gitu te pripremi poslužitelja
+# Članovi grupe:
 
-Članovi grupe:
 David Mirošević
+
 Filip Kočić
+
 Mihaela Čalogović
+
