@@ -1,0 +1,37 @@
+\subsection{HTTP protokoli}
+
+\begin{frame}
+\frametitle{HTTP protokoli}
+\begin{itemize}
+	\item Jednostavni za korisnika
+	\item Funkcionira slično SSH i Git protokolima
+	\item Dvije vrste:
+	\begin{itemize}
+		\item Smart HTTP (noviji)
+		\item Dumb HTTP (stariji)
+	\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\subsection{HTTP protokoli - Smart HTTP}
+\begin{frame}
+\frametitle{Smart HTTP}
+\begin{itemize}
+	\item Koristi HTTPS portove i razne HTTP mehanizme za autentifikaciju
+	\item Lakše za koristiti od SSH protokola, koristi korisničko ime i lozinku za prijavu umjesto SSH ključeva
+	\item Zbog Smart HTTP protokola, URL koji koristimo za gledati repozitorij preko web preglednika je isti kojim možemo klonirati repozitorij
+\end{itemize}
+\end{frame}
+
+
+\subsection{HTTP protokoli - Dumb HTTP}
+\begin{frame}
+\frametitle{Dumb HTTP}
+\begin{itemize}
+	\item Stariji od Smart HTTP-a, danas se koristi kao pričuvna metoda spajanja na repozitorij, ako Smart HTTP ne uspije
+	\item Izuzetno jednostavan za koristiti
+	\item Svatko tko ima pristup web serveru na kojem se nalazi repozitorij, može taj isti repozitorij klonirati
+	\item Ovaj protokol je najbolje koristiti samo za read-only verziju repozitorija
+\end{itemize}
+\end{frame}
