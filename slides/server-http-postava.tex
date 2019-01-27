@@ -1,0 +1,26 @@
+\subsection{Smart HTTP}
+
+\begin{frame}
+\frametitle{Smart HTTP}
+\begin{itemize}
+	\item SSH protokol nam omogućuje autentificirani pristup, dok nam Git protokol daje slobodan pristup
+	\item HTTP protokolom možemo oboje istovremeno
+	\item Pomoću Smart HTTP-a možemo postaviti server tako da provjerava može li klijent komunicirati preko HTTP-a, odnosno ako ne može, da komunicira s njim na starije metode
+	\item Također će nam ovo omogućiti pristup repozitoriju preko web preglednika
+\end{itemize}
+\end{frame}
+
+
+\subsection{Postava Smart HTTP-a}
+
+\begin{frame}
+\frametitle{Postava Smart HTTP-a}
+\begin{itemize}
+	\item Za postavu HTTP protokola, koristimo Apache za CGI server (više o postavi na \href{https://git-scm.com/book/en/v2/Git-on-the-Server-Smart-HTTP}{poveznici})
+	\item Uz Apache možemo izabrati hoće li provjeravati jesu li korisnici autentificirani te može li im posluživati repozitorij
+	\item Autentificirani korisnici imaju read/write pristup, dok neautentificirani imaju read-only pristupS
+	\item Autentificiranim korisnicima će lozinke biti zapisane u \textit{.htpasswd} datoteci za provjeru
+	\item Također je bitno postaviti SSL enkripciju radi sigurnosti
+\end{itemize}
+\end{frame}
+

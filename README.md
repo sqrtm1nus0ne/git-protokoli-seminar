@@ -6,9 +6,9 @@ Preddiplomski studij računarstva, prva godina
 
 # Članovi grupe:
 
-David Mirošević
+David Mirošević (1/3 bodova)
 
-Filip Kočić
+Filip Kočić (1/3 bodova)
 
-Mihaela Čalogović
+Mihaela Čalogović (1/3 bodova)
 

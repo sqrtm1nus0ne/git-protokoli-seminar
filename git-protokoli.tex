@@ -3,12 +3,15 @@
 
 \usepackage[croatian]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage{multicol}
 
 \title{Podržani protokoli za Git i priprema servera}
 
 \author{M. Čalogović, F. Kočić, D. Mirošević}
 \institute{Sveučilište u Rijeci - Tehnički fakultet}
-\date{\today}
+\date{27. siječnja 2019.}
 
 \begin{document}
 \titlepage
@@ -17,4 +20,17 @@
 \input{slides/protokoli-http}
 \input{slides/protokoli-ssh}
 \input{slides/protokoli-git}
+\input{slides/postava-na-server}
+\input{slides/server-ssh}
+\input{slides/server-git-daemon}
+\input{slides/server-http-postava}
+\input{slides/server-gitlab}
+
+\section{Literatura}
+\begin{frame}
+\frametitle{Literatura}
+\bibliography{literatura}
+\bibliographystyle{ieeetr}
+\end{frame}
+
 \end{document}
