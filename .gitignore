@@ -1,0 +1,7 @@
+# sve osim .pdf, .tex i /slides
+
+/*
+!*.pdf
+!*.tex
+!/slides/
+!.gitignore

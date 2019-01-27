@@ -1,0 +1,29 @@
+\subsection{Gitweb}
+
+\begin{frame}
+\frametitle{Gitweb}
+\begin{itemize}
+	\item Nakon postave HTTP servera, možemo postaviti visualizaciju repozitorija, za pregledan pristup preko web preglednika
+	\item Git dolazi sa skriptom GitWeb koja se često koristi u tu svrhu
+	\item Možemo provjeriti kako nam izgleda repozitorij uz naredbu:
+
+	\$ git instaweb --httpd=(webserver)
+
+	\item Naredba pokreće privremeni HTTPD server s pregledom našeg repozitorija, a gasi se:
+
+	\$ git instaweb --http=(webserver) --stop
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Gitweb - postava}
+\begin{itemize}
+	\item Ako želimo postaviti Gitweb, trebamo ga preuzeti:
+	\begin{itemize}
+		\item Iz Gitovog izvornog koda, ili
+		\item Neke distribucije Linuxa imaju \textit{gitweb} paket koji se može preuzeti
+	\end{itemize}
+	\item Dodajemo Gitweb skriptu na server uz pomoć Apache-a te možemo preko web preglednika vidjeti naš repozitorij
+	\item Više o postavi na \href{https://git-scm.com/book/en/v2/Git-on-the-Server-GitWeb}{poveznici}
+\end{itemize}
+\end{frame}
