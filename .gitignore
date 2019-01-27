@@ -5,3 +5,4 @@
 !*.tex
 !/slides/
 !.gitignore
+!literatura.bib
