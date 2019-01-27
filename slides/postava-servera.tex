@@ -1,0 +1,48 @@
+
+\section{Postava servera}
+
+\begin{frame}
+
+\frametitle{Postavljanje Git-a na server}
+
+\begin{itemize}
+
+	\item Koraci:
+
+	\begin{itemize}
+
+		\item izvoženje postojećeg repozitorija u novi prazan repozitorij u kojemu nema radnog direktorija
+
+		\item Primjer: $ git clone --bare moj_projekt moj_projekt.git
+
+		\item stavljanje praznog repozitorija u server
+
+		\item Primjer: $ scp -r moj_projekt.git korisnik@git.primjer.com:/srv/git
+
+		\item Svi korisnici koji imaju pristup serveru mogu klonirati naš repozitorij
+
+	\end{itemize}
+
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}
+
+\frametitle{SSH Public Key}
+
+\begin{itemize}
+
+	\item SSH Public Key - način autentifikacije mnogih Git servera
+
+	\item Svaki korisnik koji radi na nekom projektu na serveru mora imati svoj 'javni ključ'
+
+	\item Korisnici mogu naći svoj 'javni ključ' u svojem ~/.ssh direktoriju
+
+	\item Ako nemaju 'javni ključ' moraju ga generirati u Git-u izvođenjem ssh.keygen programa
+
+\end{itemize}
+
+\end{frame}
