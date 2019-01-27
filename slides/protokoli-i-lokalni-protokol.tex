@@ -1,0 +1,47 @@
+\section{Protokoli}
+\subsection{O protokolima za Git}
+
+\begin{frame}
+\frametitle{Protokoli za Git}
+
+Četiri vrste:
+\begin{itemize}
+	\item Lokalni protokol
+	\item HTTP protokoli:
+	\begin{itemize}
+		\item Smart HTTP
+		\item Dumb HTTP
+	\end{itemize}
+	\item SSH protokol
+	\item Git protokol
+\end{itemize}
+\end{frame}
+
+
+\subsection{Lokalni protokol}
+
+\begin{frame}
+\frametitle{Lokalni protokol}
+\begin{itemize}
+	\item Najjednostavniji protokol korišten na istom uređaju
+	\item Koristan ako svi članovi imaju pristup zajedničkom disku ili (manje vjerojatno) koriste isto računalo
+	\item Kloniranje repozitorija na lokalnom uređaju se jednostavno napravi naredbom:
+
+	\$ git clone /put/do/repozitorija/projekt.git
+
+	ili
+
+	\$ git clone file:///put/do/repozitorija/projekt.git
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lokalni protokol}
+\begin{itemize}
+	\item Također se lokalni repozitorij može dodati postojećem projektu:
+
+	\$ git remote add lokalni\_projekt /put/do/repozitorija/projekt.git
+
+	\item Ovako se mogu primati i slati datoteke na repozitorij putem imena "lokalni\_projekt" kao da ga koristimo preko mreže
+\end{itemize}
+\end{frame}
